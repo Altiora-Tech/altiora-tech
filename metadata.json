@@ -1,5 +1,77 @@
 {
-  "name": "Altiora Tech App",
-  "description": "A single-page landing page for Altiora Tech, a software development and automation agency. The page showcases their services, process, and an interactive AI diagnostic tool for lead generation.",
-  "requestFramePermissions": []
+  "name": "Altiora Tech - Plataforma de Desarrollo de Software",
+  "short_name": "Altiora Tech",
+  "description": "Plataforma tecnológica que ofrece soluciones de software personalizadas, combinando innovación con un enfoque centrado en el usuario. Desarrollamos herramientas que impulsan el crecimiento de tu negocio.",
+  "version": "1.0.0",
+  "author": "Equipo Altiora Tech",
+  "homepage_url": "https://altiora-tech-app.vercel.app/",
+  "manifest_version": 3,
+  "icons": [
+    {
+      "src": "/android-chrome-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/android-chrome-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ],
+  "theme_color": "#6D28D9",
+  "background_color": "#FFFFFF",
+  "display": "standalone",
+  "orientation": "portrait",
+  "scope": "/",
+  "start_url": "/?source=pwa",
+  "screenshots": [
+    {
+      "src": "/screenshots/home-light.png",
+      "sizes": "1280x800",
+      "type": "image/png",
+      "form_factor": "wide",
+      "label": "Vista principal en modo claro"
+    },
+    {
+      "src": "/screenshots/home-dark.png",
+      "sizes": "1280x800",
+      "type": "image/png",
+      "form_factor": "wide",
+      "label": "Vista principal en modo oscuro"
+    }
+  ],
+  "features": [
+    "Diseño web responsivo",
+    "Modo claro/oscuro",
+    "Optimización SEO",
+    "Carga rápida con Vite",
+    "Interfaz accesible"
+  ],
+  "categories": ["productivity", "business", "utilities"],
+  "shortcuts": [
+    {
+      "name": "Servicios",
+      "short_name": "Servicios",
+      "description": "Explora nuestros servicios de desarrollo",
+      "url": "/servicios"
+    },
+    {
+      "name": "Contacto",
+      "short_name": "Contacto",
+      "description": "Contáctanos para más información",
+      "url": "/contacto"
+    }
+  ],
+  "related_applications": [
+    {
+      "platform": "webapp",
+      "url": "https://altiora-tech-app.vercel.app/manifest.json"
+    }
+  ],
+  "prefer_related_applications": false,
+  "requestFramePermissions": [],
+  "permissions": ["notifications", "storage"],
+  "splash_pages": null,
+  "iarc_rating_id": "e84b072d-71b3-4d3e-86ae-31a8ce4e53b7"
 }
