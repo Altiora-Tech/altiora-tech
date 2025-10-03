@@ -1,5 +1,5 @@
 <div align="center">
-  <img src="public/AltioraLogo.png" alt="Altiora Tech Logo" width="200"/>
+  <img src="https://github.com/user-attachments/assets/ee0725b5-c075-4ff9-b334-b1adb69b9a83" alt="Altiora Tech Logo" width="200"/>
   
   # 🚀 Altiora Tech - Plataforma de Desarrollo de Software
 
