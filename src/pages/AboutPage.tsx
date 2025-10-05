@@ -7,6 +7,7 @@ const AboutPage: React.FC = () => {
     const teamMembers = [
         { name: 'Orli Dun', title: 'CEO & Fundador', image: 'https://i.ibb.co/bjnv1Qfc/orli.png', linkedinUrl: 'https://www.linkedin.com/in/orlibetdungonzalez/' },
         { name: 'Julia Rodríguez', title: 'CEO & Fundador', image: 'https://i.ibb.co/cRnJCKc/julia.png', linkedinUrl: 'https://www.linkedin.com/in/julia-daniela-rodriguez/' },
+        { name: 'Marcos Travaglini', title: 'CEO & Fundador', image: 'https://i.ibb.co/Hfm6JNV7/Marcos.png', linkedinUrl: 'https://www.linkedin.com/in/marcos-travaglini/' },
     ];
 
     const values = [
@@ -61,7 +62,7 @@ const AboutPage: React.FC = () => {
                   <h2 className="text-3xl md:text-4xl font-serif font-bold text-alt-purple dark:text-violet-300">Conoce al Equipo</h2>
                   <p className="text-lg text-gray-600 dark:text-gray-400 mt-4">Las mentes creativas y técnicas que hacen posible cada proyecto.</p>
               </div>
-              <div className="grid grid-cols-1 sm:grid-cols-1 lg:grid-cols-2 gap-8 max-w-5xl mx-auto">
+              <div className="grid grid-cols-1 sm:grid-cols-1 lg:grid-cols-3 gap-8 max-w-5xl mx-auto">
                   {teamMembers.map(member => (
                       <div key={member.name} className="text-center bg-white dark:bg-gray-700 p-6 rounded-lg shadow-md hover:shadow-xl transition-shadow">
                           <img 
