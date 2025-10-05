@@ -149,6 +149,7 @@ DE, FUERA DE O EN RELACIÓN CON EL SOFTWARE O EL USO U OTROS TRATOS EN EL SOFTWA
 
 - **Julia Rodríguez** - CEO & Fundador - [LinkedIn](https://www.linkedin.com/in/julia-daniela-rodriguez/)
 - **Orli Dun** - CEO & Fundador - [LinkedIn](https://www.linkedin.com/in/orlibetdungonzalez/)
+- **Marcos Travaglini** - CEO & Fundador - [LinkedIn](https://www.linkedin.com/in/marcos-travaglini/)
 
 ## ✨ Valores
 
