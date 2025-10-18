@@ -68,10 +68,10 @@ const Footer: React.FC<FooterProps> = ({ openModal, legalContent }) => {
           <div>
             <h4 className="font-bold text-white mb-4">Contacto</h4>
             <div className="flex space-x-4">
-                <a href="mailto:contacto@altiora.tech" className="text-gray-400 hover:text-alt-gold transition-colors" aria-label="Email">
+                <a href="mailto:techaltiora@gmail.com" className="text-gray-400 hover:text-alt-gold transition-colors" aria-label="Email">
                     <Mail className="h-6 w-6" />
                 </a>
-                <a href="https://linkedin.com/company/altiora-tech" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-alt-gold transition-colors" aria-label="LinkedIn">
+                <a href="https://www.linkedin.com/in/altiora-tech/" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-alt-gold transition-colors" aria-label="LinkedIn">
                     <Linkedin className="h-6 w-6" />
                 </a>
             </div>

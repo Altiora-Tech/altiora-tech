@@ -99,11 +99,11 @@ const Contact: React.FC<ContactProps> = ({ onFormSubmitSuccess }) => {
                  <div className="space-y-4 text-lg mb-6">
                     <div className="flex items-center text-gray-700 dark:text-gray-300">
                         <Mail className="h-6 w-6 mr-4 text-alt-purple dark:text-violet-300 flex-shrink-0" />
-                        <a href="mailto:contacto@altiora.tech" className="hover:text-alt-gold break-all">contacto@altiora.tech</a>
+                        <a href="mailto:techaltiora@gmail.com" className="hover:text-alt-gold break-all">techaltiora@gmail.com</a>
                     </div>
                      <div className="flex items-center text-gray-700 dark:text-gray-300">
                         <Phone className="h-6 w-6 mr-4 text-alt-purple dark:text-violet-300 flex-shrink-0" />
-                        <span>+54 9 11 1234 5678</span>
+                        <span>+58 424 298 42955</span>
                     </div>
                      <div className="flex items-start text-gray-700 dark:text-gray-300">
                         <MapPin className="h-6 w-6 mr-4 text-alt-purple dark:text-violet-300 flex-shrink-0 mt-1" />
