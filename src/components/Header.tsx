@@ -35,11 +35,10 @@ const Header: React.FC<HeaderProps> = ({ theme, toggleTheme }) => {
               alt="Altiora Logo" 
               width={100}
               height={100}
-              priority={true}
+              id="altiora-logo"
               aria-label="Altiora Logo"
-              name="Altiora Logo"
-              objectFit="contain"  
-              className="h-24 w-auto -mr-4" />
+              name="Altiora Logo" 
+              className="object-contain h-24 w-auto -mr-4" />
           <span className="text-3xl font-bold font-serif">Altiora Tech</span>
         </a>
         <nav className="hidden md:flex items-center space-x-8">

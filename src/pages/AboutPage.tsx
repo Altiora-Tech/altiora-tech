@@ -68,13 +68,12 @@ const AboutPage: React.FC = () => {
                           <img 
                             src={member.image} 
                             alt={member.name} 
-                            className="w-32 h-32 rounded-full mx-auto mb-4 border-4 border-alt-gold"
-                            priority={true}
+                            className="object-contain w-32 h-32 rounded-full mx-auto mb-4 border-4 border-alt-gold"
                             width={100}
                             height={100}
+                            id="team-member-image"
                             aria-label="Team Member"
                             name="Team Member"
-                            objectFit="contain"  
                             />
                           <h4 className="text-xl font-bold text-alt-purple dark:text-violet-300">{member.name}</h4>
                           <p className="text-gray-500 dark:text-gray-400 mb-3">{member.title}</p>

@@ -31,11 +31,10 @@ const Footer: React.FC<FooterProps> = ({ openModal, legalContent }) => {
                 alt="Altiora Logo"
                 width={100}
                 height={100} 
-                priority={true}
+                id="altiora-logo"
                 aria-label="Altiora Logo"
                 name="Altiora Logo"
-                objectFit="contain"  
-                className="h-24 w-auto -mr-6" />
+                className="object-contain h-24 w-auto -mr-6" />
               <span className="text-2xl font-bold font-serif">Altiora Tech</span>
             </a>
             <p className="text-sm text-gray-400">Construimos el software que impulsa tu negocio.</p>

@@ -82,7 +82,7 @@ const AppContent: React.FC<AppContentProps> = ({
           <Route path="/ai-assistant" element={<AIFeaturePage />} />
           <Route path="/pilot-case" element={<PilotCase />} />
           <Route path="/blog" element={<BlogPage />} />
-          <Route path="/blog/:articleId" element={<ArticlePage />} />
+          <Route path="/blog/:slug" element={<ArticlePage />} />
           <Route path="/contact" element={
             <ContactPage onFormSubmitSuccess={() => {
               openModal(

@@ -72,6 +72,7 @@ const Testimonials: React.FC = () => {
                   <button 
                       onClick={prevSlide}
                       name="Previous testimonial"
+                      type="button"
                       id="Previous testimonial"
                       aria-label="Previous testimonial"
                       aria-controls="testimonials"
@@ -84,6 +85,7 @@ const Testimonials: React.FC = () => {
                   <button 
                       onClick={nextSlide}
                       name="Next testimonial"
+                      type="button"
                       id="Next testimonial"
                       aria-label="Next testimonial"
                       aria-controls="testimonials"
@@ -101,6 +103,7 @@ const Testimonials: React.FC = () => {
                             key={index} 
                             onClick={() => setCurrentIndex(index)}
                             name={`Go to testimonial ${index + 1}`}
+                            type="button"
                             id={`testimonial-${index}`}
                             aria-controls="testimonials"
                             aria-expanded={index === currentIndex}

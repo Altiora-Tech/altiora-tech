@@ -70,12 +70,11 @@ const ServicesPage: React.FC = () => {
         alt="Desarrollo a Medida" 
         className="rounded-lg" 
         style={{ objectFit: 'contain', width: '100%', height: '100%', maxWidth: '800px', maxHeight: '800px' }} 
-        priority={true}
         width={100}
         height={100}
+        id="post-image"
         aria-label="Post Image"
-        name="Post Image"
-        objectFit="contain"  
+        name="Post Image" 
       /></div>,
       reverse: true,
     },
@@ -91,12 +90,11 @@ const ServicesPage: React.FC = () => {
         alt="Automatización de Procesos" 
         className="rounded-lg" 
         style={{ objectFit: 'contain', width: '100%', height: '100%', maxWidth: '800px', maxHeight: '800px' }} 
-        priority={true}
         width={100}
         height={100}
+        id="post-image"
         aria-label="Post Image"
-        name="Post Image"
-        objectFit="contain"  
+        name="Post Image" 
       /></div>,
     },
     /* {
@@ -109,12 +107,11 @@ const ServicesPage: React.FC = () => {
           alt="Capacitación y Workshops" 
           className="rounded-lg" 
           style={{ objectFit: 'contain', width: '100%', height: '100%', maxWidth: '800px', maxHeight: '800px' }} 
-          priority={true}
           width={100}
           height={100}
+          id="post-image"
           aria-label="Post Image"
-          name="Post Image"
-          objectFit="contain"  
+          name="Post Image" 
         /></div>,
     }, */
     {
@@ -129,12 +126,11 @@ const ServicesPage: React.FC = () => {
             alt="Consultoría Estratégica" 
             className="rounded-lg" 
             style={{ objectFit: 'contain', width: '100%', height: '100%', maxWidth: '800px', maxHeight: '800px' }} 
-            priority={true}
             width={100}
             height={100}
+            id="post-image"
             aria-label="Post Image"
             name="Post Image"
-            objectFit="contain"  
             /></div>,
         reverse: true,
     }

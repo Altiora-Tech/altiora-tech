@@ -34,8 +34,7 @@ const Hero: React.FC = () => {
         loading="lazy"
         width={1920}
         height={1080}
-        objectFit="cover"
-        optimize={true}
+        id="hero-image"
         className="absolute z-0 w-auto min-w-full min-h-full max-w-none object-cover"
       />
   

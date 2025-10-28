@@ -1,87 +1,104 @@
-
 import React from 'react';
+import { Link } from 'react-router-dom';
 import { blogPosts, Post } from '../data/blogData';
 import { ArrowRight } from 'lucide-react';
 import Newsletter from '../components/Newsletter';
+import { categories } from '../content/blog/categories';
 
 const FeaturedPost: React.FC<{ post: Post }> = ({ post }) => (
     <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 md:gap-12 items-center mb-16 md:mb-20 mt-8">
         <div className="overflow-hidden rounded-xl shadow-lg">
-            <a href={`/article?slug=${post.slug}`}>
+            <Link to={`/blog/${post.slug}`}>
                 <img    
                     src={post.image} 
                     alt={post.title} 
                     className="w-full h-auto object-cover aspect-video transform hover:scale-105 transition-transform duration-500" 
-                    priority={true}
                     width={100}
                     height={100}
+                    id="post-image"
                     aria-label="Post Image"
                     name="Post Image"
-                    objectFit="contain"  
+                    style={{ objectFit: 'cover' }}
                 />
-            </a>
+            </Link>
         </div>
         <div>
-            <p className="text-alt-gold font-semibold mb-2">{post.category}</p>
+            <div className="flex items-center text-alt-gold font-semibold mb-2">
+                {post.category in categories ? (
+                    <>
+                        {React.createElement(categories[post.category as keyof typeof categories].icon, { className: 'w-4 h-4 mr-2' })}
+                        <span>{categories[post.category as keyof typeof categories].name}</span>
+                    </>
+                ) : (
+                    <span>{post.category}</span>
+                )}
+            </div>
             <h2 className="text-3xl sm:text-4xl font-serif font-bold text-alt-purple dark:text-violet-200 mb-4">
-                <a href={`/article?slug=${post.slug}`} className="hover:text-alt-purple-light dark:hover:text-violet-300 transition-colors">{post.title}</a>
+                <Link to={`/blog/${post.slug}`} className="hover:text-alt-purple-light dark:hover:text-violet-300 transition-colors">{post.title}</Link>
             </h2>
             <p className="text-lg text-gray-600 dark:text-gray-400 mb-6">{post.excerpt}</p>
             <div className="flex items-center text-sm text-gray-500 dark:text-gray-400 mb-6">
                 <img 
                     src={post.authorImage} 
                     alt={post.author} 
-                    className="w-10 h-10 rounded-full mr-3" 
-                    priority={true}
-                    width={100}
-                    height={100}
+                    className="w-10 h-10 rounded-full mr-3 object-cover"
+                    width={40}
+                    height={40}
+                    id="author-image"
                     aria-label="Author Image"
                     name="Author Image"
-                    objectFit="contain"  
                 />
                 <span>Por <strong>{post.author}</strong></span>
                 <span className="mx-2">|</span>
                 <span>{post.date}</span>
             </div>
-             <a href={`/article?slug=${post.slug}`} className="inline-flex items-center font-bold text-alt-purple dark:text-alt-gold hover:text-alt-purple-light dark:hover:text-violet-300 transition-colors">
-                Leer más <ArrowRight className="ml-2 h-5 w-5" />
-            </a>
+             <Link to={`/blog/${post.slug}`} className="inline-flex items-center text-sm font-medium text-alt-purple dark:text-alt-gold hover:text-alt-purple-light dark:hover:text-violet-300 transition-colors">
+                Leer más <ArrowRight className="ml-1 h-4 w-4" />
+            </Link>
         </div>
     </div>
 );
 
 const PostCard: React.FC<{ post: Post }> = ({ post }) => (
     <div className="bg-white dark:bg-gray-800 rounded-xl overflow-hidden shadow-lg hover:shadow-2xl transition-shadow duration-300 flex flex-col">
-        <a href={`/article?slug=${post.slug}`} className="block overflow-hidden">
+        <Link to={`/blog/${post.slug}`} className="block overflow-hidden">
             <img 
                 src={post.image} 
                 alt={post.title} 
                 className="w-full h-56 object-cover transform hover:scale-105 transition-transform duration-500" 
-                priority={true}
                 width={100}
                 height={100}
+                id="post-image"
                 aria-label="Post Image"
                 name="Post Image"
-                objectFit="contain"  
+                style={{ objectFit: 'cover' }}
             />
-        </a>
+        </Link>
         <div className="p-6 flex flex-col flex-grow">
-            <p className="text-alt-gold font-semibold text-sm mb-2">{post.category}</p>
+            <div className="flex items-center text-alt-gold font-semibold text-sm mb-2">
+                {post.category in categories ? (
+                    <>
+                        {React.createElement(categories[post.category as keyof typeof categories].icon, { className: 'w-3.5 h-3.5 mr-1.5' })}
+                        <span>{categories[post.category as keyof typeof categories].name}</span>
+                    </>
+                ) : (
+                    <span>{post.category}</span>
+                )}
+            </div>
             <h3 className="text-xl font-serif font-bold text-alt-purple dark:text-violet-200 mb-3 flex-grow">
-                 <a href={`/article?slug=${post.slug}`} className="hover:text-alt-purple-light dark:hover:text-violet-300 transition-colors">{post.title}</a>
+                 <Link to={`/blog/${post.slug}`} className="hover:text-alt-purple-light dark:hover:text-violet-300 transition-colors">{post.title}</Link>
             </h3>
             <p className="text-gray-600 dark:text-gray-400 text-sm mb-4 line-clamp-3">{post.excerpt}</p>
             <div className="flex items-center text-xs text-gray-500 dark:text-gray-400 mt-auto pt-4 border-t dark:border-gray-700">
                 <img 
                     src={post.authorImage} 
                     alt={post.author} 
-                    className="w-8 h-8 rounded-full mr-2" 
-                    priority={true}
-                    width={100}
-                    height={100}
+                    className="w-8 h-8 rounded-full mr-2 object-cover"
+                    width={32}
+                    height={32}
+                    id="author-image"
                     aria-label="Author Image"
                     name="Author Image"
-                    objectFit="contain"  
                 />
                 <div>
                     <p className="font-semibold text-gray-800 dark:text-gray-200">{post.author}</p>
